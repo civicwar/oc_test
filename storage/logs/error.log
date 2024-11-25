@@ -802,3 +802,6 @@ Line: 214
 File: /var/www/html/admin/controller/common/security.php
 Line: 214
 
+2024-11-25 18:24:52 - PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo for dsb failed: Name or service not known in /var/www/html/system/library/db/mysqli.php on line 29
+2024-11-25 18:24:52 - Error: Could not make a database link using opencart_user@dsb!<br/>Message: php_network_getaddresses: getaddrinfo for dsb failed: Name or service not known: in /var/www/html/system/library/db/mysqli.php on line 40
+2024-11-25 18:24:59 - Error: Could not make a database link using opencart_user@localhost!<br/>Message: No such file or directory: in /var/www/html/system/library/db/mysqli.php on line 40

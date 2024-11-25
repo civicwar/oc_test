@@ -16,6 +16,19 @@ services:
       - MYSQL_PASSWORD=opencart_password
     depends_on:
       - db
+
+
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - "8081:80"
+    environment:
+      - PMA_ARBITRARY=1
+    depends_on:
+      - db
+
+
   db:
     image: mysql:5.7
     restart: always
@@ -26,6 +39,7 @@ services:
       MYSQL_PASSWORD: opencart_password
     volumes:
       - db-data:/var/lib/mysql
+      
 volumes:
   db-data:
   opencart-data:
